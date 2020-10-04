@@ -1,0 +1,20 @@
+﻿<html>
+<body>
+    <form id="redirectForm" method="post" action="https://test.cashfree.com/billpay/checkout/post/submit">
+        <input type="hidden" name="appId" value="8460f222c76a0b418f30307e0648" />
+        <input type="hidden" name="orderId" value="Order12334238" />
+        <input type="hidden" name="orderAmount" value="100" />
+        <input type="hidden" name="orderCurrency" value="INR" />
+        <input type="hidden" name="orderNote" value="test" />
+        <input type="hidden" name="customerName" value="Chandan" />
+        <input type="hidden" name="customerEmail" value="chandan.kumar@udmglobal.com" />
+        <input type="hidden" name="customerPhone" value="7019089203" />
+        <input type="hidden" name="returnUrl" value="https://eshop-orders-dev.azurewebsites.net/api/OrderBuyers/HandleResponseFromCF" />
+        <input type="hidden" name="notifyUrl" value="" />
+        <input type="hidden" name="source" value="custom-mob-sdk" />
+        <input type="hidden" name="signature" value="st6wAoCrJIykjt/WO0zqjZFdQqZZdgr1GNttcCgaF2A=" />
+
+        <input type="submit" value="Pay Online">
+    </form>
+</body>
+</html>
