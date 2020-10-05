@@ -10,7 +10,7 @@ namespace WorkingWithWebview
             //Removing Navigation Bar so that we can display CF page completly.
             NavigationPage.SetHasNavigationBar(this, false);
 
-            this.LoadCashfreePage("8460f222c76a0b418f30307e0648", "Order12334244", "100", "test", "Chandan", "chandan.kumar@udmglobal.com", "7019089203", "grGqm5ELqpU65NhieU+/EldDQVn/VR6cP8X3bm4Msgs=", "https://payments-test.cashfree.com/pgbillpayuiapi/legacy/order/cancel");
+            this.LoadCashfreePage("<AppId>", "Order12334248", "100", "test", "Chandan", "chandan.kumar@udmglobal.com", "7019089203", "<Signature>", "https://payments-test.cashfree.com/pgbillpayuiapi/legacy/order/cancel");
         }
 
         public void LoadCashfreePage(string appId, string orderId, string orderAmount, string orderNote, string customerName, string customerEmail, string customerPhone, string signature, string onClickBackCFUrl)
@@ -24,7 +24,7 @@ namespace WorkingWithWebview
             }
 
             string actionUrl = "https://test.cashfree.com/billpay/checkout/post/submit"; //ToDo :: Need to read from Appsettings
-            string returnUrl = "https://eshop-orders-dev.azurewebsites.net/api/OrderBuyers/HandleResponseFromCF"; //ToDo :: Need to read from Appsettings
+            string returnUrl = "<API_Url>"; //ToDo :: Need to read from Appsettings
             string notifyUrl = ""; //ToDo :: Need to read from Appsettings
 
             string cfHtmlStr = @"<html>
